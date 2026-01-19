@@ -2,6 +2,12 @@ body{
     background-color: #f2eee9;
     
 }
+#welcome_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .highlight_item{
     
     display:flex;
@@ -42,10 +48,16 @@ body{
     padding: 10px 20px;
     margin:2% auto;
 }
+@media (max-width: 768px) {
+    .navbar{
+        margin-right: 10px;
+    }
+}
 .navbar{
     display:flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     
 }
 .navbar ul{
@@ -89,9 +101,17 @@ a{
 .big_logo{
     width:30%;
 }
+@media (max-width: 768px) {
+    .big_logo{
+        width:60%;
+    }
+}
 #portrait{
-    width:30%;
-    border-radius: 50%;
+    margin-top: 30px;
+    border-radius: 3%;
+    background-color:  rgba(255, 255, 255, 0.033);
+    width:60%;
+    box-shadow: 0px 0px 30px rgba(150, 150, 150, 0.4)
 }
 #bio{
     width:80%
@@ -100,16 +120,12 @@ a{
     text-align: center;
     margin: 40px auto;
     border-radius: 20px;
-    box-shadow: 0px 0px 30px rgba(150, 150, 150, 0.2);
-    backdrop-filter: blur(20px);
     padding: 5px 20px 20px 20px;
     width: 80%;
-    backdrop-filter: blur(20px);
 }
 .social_icon{
     width:30px;
     margin: 0 10px;
-    box-shadow:4px 0px 4px rgba(150, 150, 150, 0.);
 }
 svg {
   position: fixed;
@@ -188,7 +204,7 @@ p{
     background-color: #1E3643;
     box-shadow: 0px 5px rgba(150, 150, 150, 0.4);
     border: 2px solid #16252e ;
-    outline: 3px inset #416c86;
+    outline: 3px inset #17252d;
 }
 .welcome_link:hover{
     background-color: #7D0B16;
@@ -221,6 +237,7 @@ p{
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(150, 150, 150, 0.4);
     margin:auto;
+    margin-bottom: 5px;
 }
 .process_images{
     display:grid;
@@ -248,13 +265,43 @@ p{
     margin:auto;
     width:100%;
 }
+.process_container_one{
+    display:grid;
+    grid-template-columns:100%;
+    gap:5px;
+    align-content:center;
+    margin:auto;
+    width:75%;
+}
+.process_container_two{
+    display:grid;
+    grid-template-columns:48% 48%;
+    gap:5px;
+    align-content:center;
+    margin:auto;
+    width:100%;
+}
+.process_container_three{
+    display:grid;
+    grid-template-columns:33% 33% 33%;
+    gap:5px;
+    align-content:center;
+    margin:auto;
+    width:100%;
+}
 .final_highlight_images{
     display:grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 48% 48%;
     gap:5px;
     justify-content: center;
     width:100%;
-    flex-wrap: wrap;
+}
+.final_highlight_spreads{
+    display:grid;
+    grid-template-columns: 100%;
+    gap:5px;
+    justify-content: center;
+    width:100%;
 }
 .process_image_sketch{
     width:80%;
@@ -267,25 +314,7 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-/*
-Static noise background effect
-.bg {
 
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
-    width: 200%;
-    height: 200vh;
-    z-index:-10;
-    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-    background-repeat: repeat;
-    animation: bg-animation .2s infinite;
-    opacity: 70%;
-    visibility: visible;
-}
-*/
 .bg {
     position: fixed;
     top: 0;
