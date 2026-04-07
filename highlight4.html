@@ -6,21 +6,22 @@
     <title>Mailu Musila</title>
     <link rel="stylesheet" href="musila_styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
-    <link rel="icon" href="images/musila_new_astra_s.png" type="image/png">
+    <link rel="icon" href="images/kimalu_mark.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navigation">
-            <div>
-                <img class="top_logo" src="images/musila_new_astra.png" alt="musila logo" max-height="50px">
-            </div>
-            <div class="navbar">
-                <ul>
-                <li><a href="index.html">Welcome</a></li>
-                <li><a href="my_highlights.html">Highlights</a></li>
-                <li><a href="about_me.html">About</a></li>
-                </ul>
+            <a href="index.html"><img class="top_logo" src="images/kimalu_mark.svg" alt="musila logo"></a>
+            <a href="index.html"><img class="top_logo" src="images/kimalu type.png" alt="musila logo"></a>
+            <div class="menu" onclick="toggleMenu()">
+                <img class="menu_icon_image" src="images/menu_icon.svg" alt="Menu Icon"> 
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</span></a></li>
+                        <li><a href="about_me.html">About</span></a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -28,7 +29,6 @@
     <main class="content_container">
         <div class="process_section_head"><h3>Adapting Design Systems</h3></div>
         <img class="project_image" src="images/highlight4_cover.png" alt="Highlight 4 mockup design">
-        <section class="process_section_container">
             <div class="project_description">
                 <p class="project_explain">
                     The project is based around Massimo Vignelli's famous grid system used across the US National Park Service (NPS). 
@@ -64,18 +64,16 @@
                     This helped inform my decisions further in terms of trying to create a cohesive but different approach to the well-established grid system.
                 </p>
             </div>
-        </section>
 
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">System Development</h4>
             </div>
             <div class="process_container_one">
                 <img class="process_image" src="images/highlight4_process1.png" alt="Highlight 4 design development image 1">
             </div>
-            <div class="process_container_two">
-                <img class="process_image" src="images/highlight4_process2.png" alt="Highlight 4 design development image 2">
-                <img class="process_image" src="images/highlight4_process3.png" alt="Highlight 4 design development image 3">
+            <div class="flex_gallery cols-2">
+                <div><img class="process_image" src="images/highlight4_process2.png" alt="Highlight 4 design development image 2"></div>
+                <div><img class="process_image" src="images/highlight4_process3.png" alt="Highlight 4 design development image 3"></div>
             </div> 
             <div class="process_details" >
                 <p class="process_explain">
@@ -86,43 +84,36 @@
                     Following the inspiration for the textured display type, I experimented with a texture on the background of my pages, where, using one of the selected images (bottom right), I used the image trace feature in Illustrator 
                     to create a texture that could be effective without intefering with the foreground elements too much in terms of readability.
                 </p>
-        </section>
 
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Poster Concepts</h4>
             </div>
-            <div class="process_container_one">
-                <img class="process_image" src="images/highlight4_p1.png" alt="Highlight 4 poster image 1">
-            </div> 
+            <div class="flex_gallery cols-2">
+                <div><img class="process_image" src="images/highlight4_p1.png" alt="Highlight 4 poster image 1"></div>
+                <div><img class="process_image" src="images/highlight4_p2.png" alt="Highlight 4 poster image 2"></div>
+            </div>
             <div class="process_details" >
                 <p class="process_explain">
                     The Haleakala poster image was the most interesting composition-wise with the angular arrangement and the idea to align the type come naturally. 
                     Still using placeholder text, the title text was moved down to allow the image more visibility and it was made white to stand out from the dark grid.
                 </p>
             </div>
-            <div class="process_container_one">
-                <img class="process_image" src="images/highlight4_p2.png" alt="Highlight 4 poster image 2">
-            </div> 
             <div class="process_details" >
                 <p class="process_explain">
                     The Tonto image felt the most vivid and all-encapsulating one of the bunch, with a cinematic composition that felt exciting along with the tagline. 
                     The text layout did not need much manipulation outside of the colour changes in the title, as the composition of the image was complex enough on its own.
                 </p>
             </div>
-        </section>
 
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Final Spreads</h4>
             </div>
-            <div class="final_highlight_spreads">
-                <img class="process_image" src="images/highlight4_s1.png" alt="Highlight 4 final design">
-                <img class="process_image" src="images/highlight4_s2.png" alt="Highlight 4 final design">
-                <img class="process_image" src="images/highlight4_s3.png" alt="Highlight 4 final design">
-                <img class="process_image" src="images/highlight4_s4.png" alt="Highlight 4 final design">
+            <div class="flex_gallery cols-2">
+                <div><img class="process_image" src="images/highlight4_s1.png" alt="Highlight 4 final design"></div>
+                <div><img class="process_image" src="images/highlight4_s2.png" alt="Highlight 4 final design"></div>
+                <div><img class="process_image" src="images/highlight4_s3.png" alt="Highlight 4 final design"></div>
+                <div><img class="process_image" src="images/highlight4_s4.png" alt="Highlight 4 final design"></div>
             </div>
-        </section>
            
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </main>

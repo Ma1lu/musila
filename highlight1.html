@@ -6,21 +6,22 @@
     <title>Mailu Musila</title>
     <link rel="stylesheet" href="musila_styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
-    <link rel="icon" href="images/musila_new_astra_s.png" type="image/png">
+    <link rel="icon" href="images/kimalu_mark.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navigation">
-            <div>
-                <img class="top_logo" src="images/musila_new_astra.png" alt="musila logo" max-height="50px">
-            </div>
-            <div class="navbar">
-                <ul>
-                <li><a href="index.html">Welcome</a></li>
-                <li><a href="my_highlights.html">Highlights</a></li>
-                <li><a href="about_me.html">About</a></li>
-                </ul>
+            <a href="index.html"><img class="top_logo" src="images/kimalu_mark.svg" alt="musila logo"></a>
+            <a href="index.html"><img class="top_logo" src="images/kimalu type.png" alt="musila logo"></a>
+            <div class="menu" onclick="toggleMenu()">
+                <img class="menu_icon_image" src="images/menu_icon.svg" alt="Menu Icon"> 
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</span></a></li>
+                        <li><a href="about_me.html">About</span></a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -50,12 +51,12 @@
             <div class="process_section_head">
                 <h4 class="project_section_title">Design Development</h4>
             </div>
-            <div class="process_container">
-                <img class="process_image" src="images/highlight1_process1.png" alt="Highlight 1 design development image 1">
-                <img class="process_image" src="images/highlight1_process2.png" alt="Highlight 1 design development image 2">
-                <img class="process_image" src="images/highlight1_process3.png" alt="Highlight 1 design development image 3">
-                <img class="process_image" src="images/highlight1_process4.png" alt="Highlight 1 design development image 4">
-                <img class="process_image" src="images/highlight1_process5.png" alt="Highlight 1 design development image 5">
+            <div class="flex_gallery cols-5">
+                <div><img class="process_image" src="images/highlight1_process1.png" alt="Highlight 1 design development image 1"></div>
+                <div><img class="process_image" src="images/highlight1_process2.png" alt="Highlight 1 design development image 2"></div>
+                <div><img class="process_image" src="images/highlight1_process3.png" alt="Highlight 1 design development image 3"></div>
+                <div><img class="process_image" src="images/highlight1_process4.png" alt="Highlight 1 design development image 4"></div>
+                <div><img class="process_image" src="images/highlight1_process5.png" alt="Highlight 1 design development image 5"></div>
             </div> 
             <div class="process_details" >
                 <p class="process_explain">
@@ -64,24 +65,20 @@
             </div>
         </section>
 
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Final Design</h4>
             </div>
-            <div class="final_highlight_images">
-                <img class="process_image" src="images/highlight1_p1.png" alt="Highlight 1 final design">
-                <img class="process_image" src="images/highlight1_p2.png" alt="Highlight 1 final design">
+            <div class="flex_gallery cols-2">
+                <div><img class="process_image" src="images/highlight1_p1.png" alt="Highlight 1 final design"></div>
+                <div><img class="process_image" src="images/highlight1_p2.png" alt="Highlight 1 final design"></div>
             </div>
-        </section>
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Social Media Square Versions</h4>
             </div>
-            <div class="process_images">
-                    <img class="process_image" src="images/highlight1_sm1.png" alt="Highlight 1 social media square version 1">
-                    <img class="process_image" src="images/highlight1_sm2.png" alt="Highlight 1 social media square version 2">
+            <div class="flex_gallery cols-2">
+                    <div><img class="process_image" src="images/highlight1_sm1.png" alt="Highlight 1 social media square version 1"></div>
+                    <div><img class="process_image" src="images/highlight1_sm2.png" alt="Highlight 1 social media square version 2"></div>
             </div>
-        </section>    
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </main>
 

@@ -28,3 +28,9 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//toggle menu for the drop down menu
+function toggleMenu() {
+    const nav = document.querySelector('.navbar');
+    nav.classList.toggle('active');
+}

@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mailu Musila</title>
+    <title>About Mailu Musila</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="musila_styles.css">
-    <link rel="icon" href="images/musila_new_astra_s.png" type="image/png">
+    <link rel="icon" href="images/kimalu_mark.svg" type="image/png">
 
     
 </head>
 <body>
+    <div class="pattern-bg"></div>
     <header>
         <nav class="navigation">
-            <div>
-                <img class="top_logo" src="images/musila_new_astra.png" alt="musila logo" max-height="50px">
-            </div>
-            <div class="navbar">
-                <ul>
-                <li><a href="index.html">Welcome</a></li>
-                <li><a href="my_highlights.html">Highlights</a></li>
-                <li><a href="about_me.html"><span class="red">About</span></a></li>
-                </ul>
+            <a href="index.html"><img class="top_logo" src="images/kimalu_mark.svg" alt="musila logo"></a>
+            <a href="index.html"><img class="top_logo" src="images/kimalu type.png" alt="musila logo"></a>
+            <div class="menu" onclick="toggleMenu()">
+                <img class="menu_icon_image" src="images/menu_icon.svg" alt="Menu Icon"> 
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</span></a></li>
+                        <li><a href="about_me.html"><span class="red">About</span></a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main class="content_container">
-        <h3>Mailu Musila</h3>
-        <h4 id="about_hook">Poised, passionate and purposeful</h4>
-        <p id="bio">
-            My name is Mailu Musila, second year at Rochester Institute of Technology. I am a Kenyan student, pursuing my BFA in Graphic Design with a minor in Mobile Design and Development. 
-            As a designer, my inspiration stems from a fascination with the power of visual communication and expression and its ability to shape people's perception and communicate efficiently and effectively.
-            I look to design with a systems mindset and a minimalism-first philosophy, allowing efficient communication to lighten the viewer's workload. Every decision strengthens the whole. <span class="red">Everything by design.</span>
-        </p>
-        <img id="portrait" src="images/pregr.jpg" alt="Mailu Musila Portrait">
+        <div class="intro"> 
+            <div class="irregular_card">
+                <img id="portrait" src="images/portrait_gemini.png" alt="Mailu Musila Portrait">
+            </div>
+            <div> 
+                <h3>Mailu Musila</h3>
+                <h5>Visual Systems | UI/UX Design | Motion Design</h5>
+                <h4 id="about_hook">Poised, passionate and purposeful</h4>
+                <p id="bio">
+                    I am a Kenyan student at Rochester Institute of Technology, pursuing my BFA  in Graphic Design with a minor in Mobile Design and Development. 
+                    I am inspired by visual systems, digital interactivity and turning function into form, enhancing visual communication and the ability to shape people's perception and communicate efficiently and effectively. 
+                    Every decision strengthens the whole. <br>
+                    <span class="red">Everything by design.</span>
+                </p>
+            </div>
+        </div>
+        
+        
     </main>
 
     <section id="contact_me">
         <h3>Contact Me</h3>
-        <p>If you would like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+        <p>Send an email or connect on LinkedIn.</p>
         <div id="social_links">
             <a href="mailto:mailudm12@gmail.com">
                 <img class="social_icon" src="images/gmail.png" alt="Email Icon">

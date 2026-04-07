@@ -6,21 +6,22 @@
     <title>Mailu Musila</title>
     <link rel="stylesheet" href="musila_styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
-    <link rel="icon" href="images/musila_new_astra_s.png" type="image/png">
+    <link rel="icon" href="images/kimalu_mark.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navigation">
-            <div>
-                <img class="top_logo" src="images/musila_new_astra.png" alt="musila logo" max-height="50px">
-            </div>
-            <div class="navbar">
-                <ul>
-                <li><a href="index.html">Welcome</a></li>
-                <li><a href="my_highlights.html">Highlights</a></li>
-                <li><a href="about_me.html">About</a></li>
-                </ul>
+            <a href="index.html"><img class="top_logo" src="images/kimalu_mark.svg" alt="musila logo"></a>
+            <a href="index.html"><img class="top_logo" src="images/kimalu type.png" alt="musila logo"></a>
+            <div class="menu" onclick="toggleMenu()">
+                <img class="menu_icon_image" src="images/menu_icon.svg" alt="Menu Icon"> 
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</span></a></li>
+                        <li><a href="about_me.html">About</span></a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -30,7 +31,6 @@
         <div class="process_container_one">
             <img class="project_image" src="images/highlight5_cover_menu.png" alt="Highlight 1 mockup design">
         </div>
-        <section class="process_section_container">
             <div class="project_description">
                 <p class="project_explain">
                     This project was centered around restaurant branding and promotion, where I was to create a poster, menu and social media posts for a restaurant's grand-opening fitting the guidelines, 
@@ -41,10 +41,10 @@
             <div class="process_section_head">
                 <h4 class="project_section_title">Ideation</h4>
             </div>
-            <div class="process_container_three">
-                <img class="process_image" src="images/highlight5_sketches1.png" alt="Highlight 5 ideation image 1">
-                <img class="process_image" src="images/highlight5_sketches2.png" alt="Highlight 5 ideation image 2">
-                <img class="process_image" src="images/highlight5_sketches3.png" alt="Highlight 5 ideation image 3">
+            <div class="flex_gallery cols-3">
+                <div><img class="process_image" src="images/highlight5_sketches1.png" alt="Highlight 5 ideation image 1"></div>
+                <div><img class="process_image" src="images/highlight5_sketches2.png" alt="Highlight 5 ideation image 2"></div>
+                <div><img class="process_image" src="images/highlight5_sketches3.png" alt="Highlight 5 ideation image 3"></div>
             </div>
             <div class="process_details" >
                 <p class="process_explain">
@@ -54,54 +54,33 @@
                     The colour scheme was based on the warmth and comfort of the cuisine and emotional appeal of the family-style restaurant, focusing on earthy tones like deep red, pale burnt yellow and dark gray.
                 </p>
             </div>
-        </section>
 
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Poster Concepts</h4>
             </div>
-            <div class="process_container_one">
                 <img class="process_image" src="images/highlight5_p1.png" alt="Highlight 5 design development image 1">
-              
-            </div>
-        </section>
 
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Social Media Concepts</h4>
             </div>
-            <div class="process_container_one">
                 <img class="process_image" src="images/highlight5_s1.png" alt="Highlight 5 design development image 1">
-            
-            </div>
-        </section>
 
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Restaurant Poster</h4>
             </div>
-            <div class="process_container_one">
                 <img class="process_image" src="images/highlight5_poster.png" alt="Highlight 5 final poster">
-            </div>
-        </section>
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Restaurant Menu</h4>
             </div>
-            <div class="process_container_one">
                 <img class="process_image" src="images/highlight5_cover_menu.png" alt="Highlight 5 final menu">
-            </div>
-        <section class="process_section_container">
             <div class="process_section_head">
                 <h4 class="project_section_title">Social Media Posts</h4>
             </div>
-            <div class="process_container_three">
-                    <img class="process_image" src="images/highlight5_sm1.png" alt="Highlight 5 social media square version 1">
-                    <img class="process_image" src="images/highlight5_sm2.png" alt="Highlight 5 social media square version 2">
-                    <img class="process_image" src="images/highlight5_sm3.png" alt="Highlight 5 social media square version 2">
-
+            <div class="flex_gallery cols-2">
+                    <div><img class="process_image" src="images/highlight5_sm1.png" alt="Highlight 5 social media square version 1"></div>
+                    <div><img class="process_image" src="images/highlight5_sm2.png" alt="Highlight 5 social media square version 2"></div>
+                    <div><img class="process_image" src="images/highlight5_sm3.png" alt="Highlight 5 social media square version 3"></div>
             </div>  
-        </section>    
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </main>
