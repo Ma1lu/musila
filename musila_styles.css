@@ -90,7 +90,7 @@ body{
     overflow: hidden;
     transition: max-height 0.35s ease;
     position: absolute;
-    top: 60px;
+    top: 80px;
     right: 5px;
     width: 150px;
     text-align: right;
